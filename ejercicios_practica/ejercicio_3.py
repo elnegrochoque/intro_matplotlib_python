@@ -34,4 +34,14 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Grafico tangh', fontsize=16)
+    ax = fig.add_subplot()
+
+    ax.scatter(x, y, c='blue', label='y=tangh')
+
+    ax.legend()
+    ax.grid()
+    plt.show()
+
     print("terminamos")

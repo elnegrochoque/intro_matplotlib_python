@@ -53,5 +53,31 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('4 graficos', fontsize=16)
+    ax1 = fig.add_subplot(2, 2, 1)  # 1 fila, 2 columnas, axes nº1
+    ax2 = fig.add_subplot(2, 2, 2)  # 1 fila, 2 columnas, axes nº2
+    ax3 = fig.add_subplot(2, 2, 3)  # 1 fila, 2 columnas, axes nº2
+    ax4 = fig.add_subplot(2, 2, 4)  # 1 fila, 2 columnas, axes nº2
+    # Como los datos no están ordenados por año
+    # el plot no funcionará bien en este caso
 
+    ax1.plot(x, y1, c='green',label="y=x^2")
+    ax1.legend()
+    ax1.grid()
+
+    ax2.plot(x,y2, c='red',label="y=x^3")
+    ax2.legend()
+    ax2.grid()
+
+    ax3.plot(x, y3, c='blue',label="y=x^4")
+    ax3.legend()
+    ax3.grid()
+
+    ax4.plot(x, y4, c='brown', label="y=x^(1/2)")
+    ax4.legend()
+    ax4.grid()
+
+    plt.show()
+    print("Fin scatter plot")
     print("terminamos")

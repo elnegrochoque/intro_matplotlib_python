@@ -34,5 +34,13 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Grafico de funcion cuadratica', fontsize=16)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y, c='darkgreen', label='funcion y=x^2')
+    ax.legend()
+    ax.grid()
+    plt.show()
 
     print("terminamos")

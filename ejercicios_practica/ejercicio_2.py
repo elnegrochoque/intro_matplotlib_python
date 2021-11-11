@@ -46,4 +46,14 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Grafico', fontsize=16)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y1, c='blue', label='funcion y=x^2')
+    ax.plot(x, y2, c='red', label='funcion y=x^3')
+    ax.legend()
+    ax.grid()
+    plt.show()
+
     print("terminamos")
