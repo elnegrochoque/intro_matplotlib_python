@@ -79,5 +79,5 @@ if __name__ == '__main__':
     ax4.grid()
 
     plt.show()
-    print("Fin scatter plot")
+   
     print("terminamos")
